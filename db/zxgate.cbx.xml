@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="zxgate">
+		<CBX_INST_ENTRY INSTANCE_NAME="|zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d6n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_d6n1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_qj91.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

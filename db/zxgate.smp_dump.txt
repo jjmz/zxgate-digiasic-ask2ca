@@ -1,0 +1,7 @@
+
+State Machine - |zx01xr|top:c_top|lcd97:c_lcd97|state
+Name state.POST state.DISPLAY state.PRE state.SYNC 
+state.SYNC 0 0 0 0 
+state.PRE 0 0 1 1 
+state.DISPLAY 0 1 0 1 
+state.POST 1 0 0 1 

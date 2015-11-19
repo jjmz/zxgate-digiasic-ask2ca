@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow Model Setup 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -16.743
+TNS   : -6800.916
+
+Type  : Slow Model Setup 'div50[2]'
+Slack : -6.240
+TNS   : -112.045
+
+Type  : Slow Model Setup 'clk50'
+Slack : -4.040
+TNS   : -196.799
+
+Type  : Slow Model Setup 'T80s:c_Z80|IORQ_n'
+Slack : -2.975
+TNS   : -4.189
+
+Type  : Slow Model Hold 'div50[2]'
+Slack : -3.596
+TNS   : -3.596
+
+Type  : Slow Model Hold 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -1.852
+TNS   : -17.049
+
+Type  : Slow Model Hold 'clk50'
+Slack : -1.835
+TNS   : -10.873
+
+Type  : Slow Model Hold 'T80s:c_Z80|IORQ_n'
+Slack : 0.499
+TNS   : 0.000
+
+Type  : Slow Model Recovery 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -4.523
+TNS   : -584.699
+
+Type  : Slow Model Recovery 'T80s:c_Z80|IORQ_n'
+Slack : -3.125
+TNS   : -3.499
+
+Type  : Slow Model Recovery 'div50[2]'
+Slack : -0.629
+TNS   : -4.742
+
+Type  : Slow Model Removal 'T80s:c_Z80|IORQ_n'
+Slack : -0.091
+TNS   : -0.091
+
+Type  : Slow Model Removal 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : 0.242
+TNS   : 0.000
+
+Type  : Slow Model Removal 'div50[2]'
+Slack : 0.847
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'clk50'
+Slack : -2.567
+TNS   : -345.837
+
+Type  : Slow Model Minimum Pulse Width 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -2.277
+TNS   : -1641.596
+
+Type  : Slow Model Minimum Pulse Width 'div50[2]'
+Slack : -0.742
+TNS   : -59.360
+
+Type  : Slow Model Minimum Pulse Width 'T80s:c_Z80|IORQ_n'
+Slack : -0.742
+TNS   : -2.968
+
+Type  : Fast Model Setup 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -4.606
+TNS   : -1683.108
+
+Type  : Fast Model Setup 'div50[2]'
+Slack : -2.043
+TNS   : -20.043
+
+Type  : Fast Model Setup 'clk50'
+Slack : -1.457
+TNS   : -21.997
+
+Type  : Fast Model Setup 'T80s:c_Z80|IORQ_n'
+Slack : -0.324
+TNS   : -0.324
+
+Type  : Fast Model Hold 'div50[2]'
+Slack : -1.530
+TNS   : -1.661
+
+Type  : Fast Model Hold 'clk50'
+Slack : -1.185
+TNS   : -11.406
+
+Type  : Fast Model Hold 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -1.030
+TNS   : -15.160
+
+Type  : Fast Model Hold 'T80s:c_Z80|IORQ_n'
+Slack : 0.215
+TNS   : 0.000
+
+Type  : Fast Model Recovery 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -1.484
+TNS   : -89.032
+
+Type  : Fast Model Recovery 'T80s:c_Z80|IORQ_n'
+Slack : -0.716
+TNS   : -0.716
+
+Type  : Fast Model Recovery 'div50[2]'
+Slack : 0.285
+TNS   : 0.000
+
+Type  : Fast Model Removal 'T80s:c_Z80|IORQ_n'
+Slack : -0.062
+TNS   : -0.062
+
+Type  : Fast Model Removal 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : 0.004
+TNS   : 0.000
+
+Type  : Fast Model Removal 'div50[2]'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'clk50'
+Slack : -1.627
+TNS   : -221.604
+
+Type  : Fast Model Minimum Pulse Width 'top:c_top|res_clk:c_res_clk|i_phi'
+Slack : -1.423
+TNS   : -1063.432
+
+Type  : Fast Model Minimum Pulse Width 'div50[2]'
+Slack : -0.500
+TNS   : -40.000
+
+Type  : Fast Model Minimum Pulse Width 'T80s:c_Z80|IORQ_n'
+Slack : -0.500
+TNS   : -2.000
+
+------------------------------------------------------------
