@@ -23,11 +23,8 @@
 
 # Clock constraints
 
-create_clock -name "clk50" -period 20.000ns [get_ports {clk50}]
+create_clock -name "clock" -period 20.000ns [get_ports {clock}]
 
-#example : create_generated_clock -divide_by 2 -source [get_ports clk] -name clkdiv [get_registers clkdiv]
-create_generated_clock -divide_by 7 -source [get_ports {clk50}] -name "clock" [get_registers div50[2]]
-create_generated_clock -divide_by 2 -source [get_registers div50[2]] -name "phi" [get_registers top:c_top|res_clk:c_res_clk|i_phi]
 
 # Automatically constrain PLL and other generated clocks
 derive_pll_clocks -create_base_clocks

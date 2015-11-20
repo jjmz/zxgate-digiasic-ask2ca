@@ -75,15 +75,6 @@ set_location_assignment PIN_133 -to kbd_data
 set_location_assignment PIN_144 -to usa_uk
 set_location_assignment PIN_143 -to v_inv
 set_location_assignment PIN_139 -to rst_n
-set_location_assignment PIN_3 -to d_lcd[3]
-set_location_assignment PIN_4 -to d_lcd[2]
-set_location_assignment PIN_7 -to d_lcd[1]
-set_location_assignment PIN_8 -to d_lcd[0]
-set_location_assignment PIN_9 -to cp1
-set_location_assignment PIN_24 -to cp2
-set_location_assignment PIN_125 -to tape_out
-set_location_assignment PIN_25 -to s
-set_location_assignment PIN_141 -to tape_in
 set_location_assignment PIN_100 -to a[14]
 set_location_assignment PIN_97 -to a[13]
 set_location_assignment PIN_101 -to a[12]
@@ -115,7 +106,6 @@ set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_REGISTER_RETIMING ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_COMBO_LOGIC_FOR_AREA ON
 set_global_assignment -name PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA ON
-set_location_assignment PIN_126 -to video
 set_global_assignment -name SYNTH_TIMING_DRIVEN_SYNTHESIS OFF
 set_global_assignment -name USE_CONFIGURATION_DEVICE ON
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
@@ -125,4 +115,7 @@ set_location_assignment PIN_17 -to clk50
 set_location_assignment PIN_122 -to vgaR
 set_location_assignment PIN_121 -to vgaG
 set_location_assignment PIN_120 -to vgaB
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
+set_location_assignment PIN_126 -to vgaHS
+set_location_assignment PIN_125 -to vgaVS
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

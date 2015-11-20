@@ -1,5 +1,5 @@
 Analysis & Synthesis report for zxgate
-Thu Nov 19 09:19:35 2015
+Fri Nov 20 11:55:14 2015
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -67,16 +67,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 19 09:19:35 2015           ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 20 11:55:14 2015           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; zxgate                                          ;
 ; Top-level Entity Name              ; zx01xr                                          ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2,844                                           ;
-;     Total combinational functions  ; 2,693                                           ;
-;     Dedicated logic registers      ; 572                                             ;
-; Total registers                    ; 572                                             ;
-; Total pins                         ; 45                                              ;
+; Total logic elements               ; 2,803                                           ;
+;     Total combinational functions  ; 2,653                                           ;
+;     Dedicated logic registers      ; 546                                             ;
+; Total registers                    ; 546                                             ;
+; Total pins                         ; 37                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 68,608                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -226,29 +226,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------------------------+
 ; Resource                                    ; Usage                             ;
 +---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 2,844                             ;
+; Estimated Total logic elements              ; 2,803                             ;
 ;                                             ;                                   ;
-; Total combinational functions               ; 2693                              ;
+; Total combinational functions               ; 2653                              ;
 ; Logic element usage by number of LUT inputs ;                                   ;
-;     -- 4 input functions                    ; 1895                              ;
-;     -- 3 input functions                    ; 447                               ;
-;     -- <=2 input functions                  ; 351                               ;
+;     -- 4 input functions                    ; 1880                              ;
+;     -- 3 input functions                    ; 434                               ;
+;     -- <=2 input functions                  ; 339                               ;
 ;                                             ;                                   ;
 ; Logic elements by mode                      ;                                   ;
-;     -- normal mode                          ; 2480                              ;
-;     -- arithmetic mode                      ; 213                               ;
+;     -- normal mode                          ; 2449                              ;
+;     -- arithmetic mode                      ; 204                               ;
 ;                                             ;                                   ;
-; Total registers                             ; 572                               ;
-;     -- Dedicated logic registers            ; 572                               ;
+; Total registers                             ; 546                               ;
+;     -- Dedicated logic registers            ; 546                               ;
 ;     -- I/O registers                        ; 0                                 ;
 ;                                             ;                                   ;
-; I/O pins                                    ; 45                                ;
+; I/O pins                                    ; 37                                ;
 ; Total memory bits                           ; 68608                             ;
 ; Embedded Multiplier 9-bit elements          ; 0                                 ;
 ; Maximum fan-out node                        ; top:c_top|res_clk:c_res_clk|i_phi ;
 ; Maximum fan-out                             ; 509                               ;
-; Total fan-out                               ; 11945                             ;
-; Average fan-out                             ; 3.58                              ;
+; Total fan-out                               ; 11741                             ;
+; Average fan-out                             ; 3.60                              ;
 +---------------------------------------------+-----------------------------------+
 
 
@@ -257,7 +257,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                   ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |zx01xr                                      ; 2693 (29)         ; 572 (7)      ; 68608       ; 0            ; 0       ; 0         ; 45   ; 0            ; |zx01xr                                                                                                                               ; work         ;
+; |zx01xr                                      ; 2653 (29)         ; 546 (7)      ; 68608       ; 0            ; 0       ; 0         ; 37   ; 0            ; |zx01xr                                                                                                                               ; work         ;
 ;    |DBLSCAN:scan2x|                          ; 36 (36)           ; 35 (35)      ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x                                                                                                                ; work         ;
 ;       |ramb4_s8_s8:u_ram_a|                  ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a                                                                                            ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component                                                            ; work         ;
@@ -268,21 +268,20 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |altsyncram_d6n1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated                             ; work         ;
 ;                |altsyncram_1us1:altsyncram1| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1 ; work         ;
 ;    |PS2_MatrixEncoder:c_PS2_MatrixEncoder|   ; 261 (261)         ; 103 (103)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder                                                                                         ; work         ;
-;    |T80s:c_Z80|                              ; 2203 (9)          ; 357 (12)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80                                                                                                                    ; work         ;
-;       |T80:u0|                               ; 2194 (898)        ; 345 (217)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0                                                                                                             ; work         ;
+;    |T80s:c_Z80|                              ; 2207 (10)         ; 357 (12)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80                                                                                                                    ; work         ;
+;       |T80:u0|                               ; 2197 (898)        ; 345 (217)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0                                                                                                             ; work         ;
 ;          |T80_ALU:alu|                       ; 512 (512)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu                                                                                                 ; work         ;
-;          |T80_MCode:mcode|                   ; 527 (527)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_MCode:mcode                                                                                             ; work         ;
+;          |T80_MCode:mcode|                   ; 530 (530)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_MCode:mcode                                                                                             ; work         ;
 ;          |T80_Reg:Regs|                      ; 257 (257)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs                                                                                                ; work         ;
 ;    |rom81:c_ROM81|                           ; 0 (0)             ; 1 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81                                                                                                                 ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 1 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component                                                                                 ; work         ;
 ;          |altsyncram_qj91:auto_generated|    ; 0 (0)             ; 1 (1)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated                                                  ; work         ;
-;    |top:c_top|                               ; 164 (0)           ; 69 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top                                                                                                                     ; work         ;
-;       |busses:c_busses|                      ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|busses:c_busses                                                                                                     ; work         ;
+;    |top:c_top|                               ; 120 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top                                                                                                                     ; work         ;
+;       |busses:c_busses|                      ; 63 (63)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|busses:c_busses                                                                                                     ; work         ;
 ;       |io81:c_io81|                          ; 5 (5)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|io81:c_io81                                                                                                         ; work         ;
-;       |lcd97:c_lcd97|                        ; 41 (41)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|lcd97:c_lcd97                                                                                                       ; work         ;
 ;       |modes97:c_modes97|                    ; 13 (13)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|modes97:c_modes97                                                                                                   ; work         ;
 ;       |res_clk:c_res_clk|                    ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|res_clk:c_res_clk                                                                                                   ; work         ;
-;       |video81:c_video81|                    ; 36 (36)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|video81:c_video81                                                                                                   ; work         ;
+;       |video81:c_video81|                    ; 34 (34)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|video81:c_video81                                                                                                   ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -322,25 +321,35 @@ Encoding Type:  One-Hot
 +---------------+------------+---------------+-----------+------------+
 
 
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; T80s:c_Z80|T80:u0|BusReq_s            ; Stuck at GND due to stuck port data_in ;
-; T80s:c_Z80|T80:u0|BusAck              ; Stuck at GND due to stuck port data_in ;
-; Total Number of Removed Registers = 2 ;                                        ;
-+---------------------------------------+----------------------------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; T80s:c_Z80|T80:u0|BusReq_s             ; Stuck at GND due to stuck port data_in ;
+; T80s:c_Z80|T80:u0|BusAck               ; Stuck at GND due to stuck port data_in ;
+; top:c_top|lcd97:c_lcd97|line_cnt[0..6] ; Lost fanout                            ;
+; top:c_top|lcd97:c_lcd97|vsync          ; Lost fanout                            ;
+; top:c_top|lcd97:c_lcd97|pixel[0..4]    ; Lost fanout                            ;
+; top:c_top|lcd97:c_lcd97|state.SYNC     ; Lost fanout                            ;
+; top:c_top|lcd97:c_lcd97|state.PRE      ; Lost fanout                            ;
+; top:c_top|lcd97:c_lcd97|state.DISPLAY  ; Lost fanout                            ;
+; top:c_top|lcd97:c_lcd97|state.POST     ; Lost fanout                            ;
+; Total Number of Removed Registers = 19 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                     ;
-+----------------------------+---------------------------+----------------------------------------+
-; Register name              ; Reason for Removal        ; Registers Removed due to This Register ;
-+----------------------------+---------------------------+----------------------------------------+
-; T80s:c_Z80|T80:u0|BusReq_s ; Stuck at GND              ; T80s:c_Z80|T80:u0|BusAck               ;
-;                            ; due to stuck port data_in ;                                        ;
-+----------------------------+---------------------------+----------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                              ;
++-------------------------------------+---------------------------+------------------------------------------------------------------------+
+; Register name                       ; Reason for Removal        ; Registers Removed due to This Register                                 ;
++-------------------------------------+---------------------------+------------------------------------------------------------------------+
+; top:c_top|lcd97:c_lcd97|pixel[4]    ; Lost Fanouts              ; top:c_top|lcd97:c_lcd97|pixel[3], top:c_top|lcd97:c_lcd97|pixel[2],    ;
+;                                     ;                           ; top:c_top|lcd97:c_lcd97|pixel[1], top:c_top|lcd97:c_lcd97|pixel[0]     ;
+; top:c_top|lcd97:c_lcd97|line_cnt[6] ; Lost Fanouts              ; top:c_top|lcd97:c_lcd97|state.SYNC, top:c_top|lcd97:c_lcd97|state.POST ;
+; T80s:c_Z80|T80:u0|BusReq_s          ; Stuck at GND              ; T80s:c_Z80|T80:u0|BusAck                                               ;
+;                                     ; due to stuck port data_in ;                                                                        ;
++-------------------------------------+---------------------------+------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -348,12 +357,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 572   ;
-; Number of registers using Synchronous Clear  ; 27    ;
+; Total registers                              ; 546   ;
+; Number of registers using Synchronous Clear  ; 20    ;
 ; Number of registers using Synchronous Load   ; 27    ;
-; Number of registers using Asynchronous Clear ; 317   ;
+; Number of registers using Asynchronous Clear ; 310   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 424   ;
+; Number of registers using Clock Enable       ; 413   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -369,7 +378,7 @@ Encoding Type:  One-Hot
 ; top:c_top|modes97:c_modes97|mode_rom0               ; 1       ;
 ; T80s:c_Z80|MREQ_n                                   ; 7       ;
 ; T80s:c_Z80|T80:u0|M1_n                              ; 7       ;
-; T80s:c_Z80|T80:u0|MCycle[0]                         ; 87      ;
+; T80s:c_Z80|T80:u0|MCycle[0]                         ; 85      ;
 ; T80s:c_Z80|T80:u0|F[2]                              ; 8       ;
 ; T80s:c_Z80|T80:u0|F[7]                              ; 7       ;
 ; T80s:c_Z80|T80:u0|F[6]                              ; 11      ;
@@ -435,64 +444,64 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|top:c_top|modes97:c_modes97|mode_romp[0]            ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ALU_Op_r[0]                       ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|RegAddrC[1]                       ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|Read_To_Reg_r[0]                  ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[27]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|RegAddrC[0]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|Read_To_Reg_r[2]                  ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[21]       ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|XY_State[0]                       ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|top:c_top|res_clk:c_res_clk|timer[0]                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|video_pixel[6]          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|line_cnt[2]             ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|video_pixel[3]          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|line_cnt[4]             ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|MCycle[2]                         ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix_Set    ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|DBLSCAN:scan2x|vs_cnt[0]                            ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TState[2]                         ;
-; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|R[4]                              ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|IR[7]                             ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[7][1]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[6][1]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[5][2]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[4][2]  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TState[1]                         ;
+; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|R[6]                              ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|IR[3]                             ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[7][2]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[6][2]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[5][3]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[4][3]  ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[3][3]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[2][1]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[1][4]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[0][4]  ;
-; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusB[4]                           ;
-; 12:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusA[4]                           ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ISet[0]                           ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|RX_Bit_Cnt[1] ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[11]                       ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[2][4]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[1][3]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[0][0]  ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusB[7]                           ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusA[7]                           ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ISet[1]                           ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|RX_Bit_Cnt[3] ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[13]                       ;
 ; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[7]                        ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[4]                        ;
-; 12:1               ; 7 bits    ; 56 LEs        ; 7 LEs                ; 49 LEs                 ; Yes        ; |zx01xr|top:c_top|lcd97:c_lcd97|line_cnt[2]                 ;
-; 13:1               ; 7 bits    ; 56 LEs        ; 21 LEs               ; 35 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[5]                             ;
-; 13:1               ; 8 bits    ; 64 LEs        ; 40 LEs               ; 24 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[14]                            ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[3]                        ;
+; 12:1               ; 7 bits    ; 56 LEs        ; 7 LEs                ; 49 LEs                 ; Yes        ; |zx01xr|top:c_top|lcd97:c_lcd97|line_cnt[4]                 ;
+; 13:1               ; 7 bits    ; 56 LEs        ; 21 LEs               ; 35 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[7]                             ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 40 LEs               ; 24 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[13]                            ;
 ; 19:1               ; 8 bits    ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[1]                              ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[8]                              ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[0]        ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|DO[4]                             ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[8]                             ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[2]                             ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ACC[7]                            ;
-; 18:1               ; 2 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|F[3]                              ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[10]                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[31]       ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|DO[6]                             ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[14]                            ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[4]                             ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ACC[1]                            ;
+; 18:1               ; 2 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|F[5]                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|Q_t                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |zx01xr|d_mem_i[5]                                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |zx01xr|d_mem_i[4]                                          ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|DAA_Q[1]              ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|a_mem_h[13]               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[3]                       ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux44                ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|Mux9                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[1]                       ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux39                ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|Mux8                  ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|DAA_Q[6]              ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegDIL[3]                         ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux9                 ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegDIL[7]                         ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux6                 ;
 ; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux21                ;
 ; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Mux12         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[7]                ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[5]                ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegAddrA[1]                       ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[2]                ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[1]                ;
 ; 17:1               ; 4 bits    ; 44 LEs        ; 24 LEs               ; 20 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[0]                       ;
-; 19:1               ; 2 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegWEH                            ;
-; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[7]                       ;
-; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |zx01xr|top:c_top|lcd97:c_lcd97|Selector3                   ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegWEL                            ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[5]                       ;
+; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |zx01xr|top:c_top|lcd97:c_lcd97|Selector1                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
@@ -872,6 +881,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; oe_cpu  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; oe_mem  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; n_romcs ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; tape_in ; Input  ; Info     ; Stuck at GND                                                                        ;
+; d_lcd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; s       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cp1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; cp2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -911,7 +925,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Thu Nov 19 09:19:19 2015
+    Info: Processing started: Fri Nov 20 11:54:58 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off zxgate -c zxgate
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file zx01/zx01xr.vhd
@@ -968,10 +982,10 @@ Info (12021): Found 2 design units, including 1 entities, in source file ramb4_s
     Info (12022): Found design unit 1: ramb4_s8_s8-SYN
     Info (12023): Found entity 1: ramb4_s8_s8
 Info (12127): Elaborating entity "zx01xr" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at zx01xr.vhd(145): object "n_romcs" assigned a value but never read
-Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(305): port or argument "O_R" has 2/3 unassociated elements
-Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(305): port or argument "O_G" has 2/3 unassociated elements
-Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(305): port or argument "O_B" has 1/2 unassociated elements
+Warning (10036): Verilog HDL or VHDL warning at zx01xr.vhd(151): object "n_romcs" assigned a value but never read
+Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(313): port or argument "O_R" has 2/3 unassociated elements
+Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(313): port or argument "O_G" has 2/3 unassociated elements
+Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(313): port or argument "O_B" has 1/2 unassociated elements
 Info (12128): Elaborating entity "PS2_MatrixEncoder" for hierarchy "PS2_MatrixEncoder:c_PS2_MatrixEncoder"
 Info (12128): Elaborating entity "T80s" for hierarchy "T80s:c_Z80"
 Info (12128): Elaborating entity "T80" for hierarchy "T80s:c_Z80|T80:u0"
@@ -1059,17 +1073,18 @@ Critical Warning (18061): Ignored Power-Up Level option on the following registe
     Critical Warning (18010): Register top:c_top|modes97:c_modes97|mode_rom0 will power up to High
     Critical Warning (18010): Register PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[31] will power up to Low
     Critical Warning (18010): Register PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[0] will power up to Low
+Info (17049): 17 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2976 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
-    Info (21059): Implemented 30 output pins
+Info (21057): Implemented 2928 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 23 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 2909 logic cells
+    Info (21061): Implemented 2869 logic cells
     Info (21064): Implemented 22 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 678 megabytes
-    Info: Processing ended: Thu Nov 19 09:19:35 2015
+    Info: Peak virtual memory: 674 megabytes
+    Info: Processing ended: Fri Nov 20 11:55:14 2015
     Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:16
 

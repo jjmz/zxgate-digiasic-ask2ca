@@ -19,23 +19,29 @@ entity zx01xr is
         kbd_data: in    std_ulogic;
         v_inv:    in    std_ulogic;
         usa_uk:   in   	std_ulogic;
-        video:    out   std_ulogic;
-        tape_in:  in    std_ulogic;
-        tape_out: out   std_ulogic;
-		oe_n:     out   std_logic;
-		we_n:     out   std_logic;
-		ramcs_n:  out   std_logic;
-		--romcs_n:  out   std_logic;
-		--pgm_n:    out   std_logic;
-		a:        out   std_logic_vector(14 downto 0);
-		d:        inout std_logic_vector(7 downto 0);
-
-		vgaR,vgaG,vgaB : out std_ulogic;
+		  
+        --video:    out   std_ulogic;
+        --tape_in:  in    std_ulogic;
+        --tape_out: out   std_ulogic;
+		  
+			oe_n:     out   std_logic;
+			we_n:     out   std_logic;
+			ramcs_n:  out   std_logic;
 		
-        d_lcd:    out   std_ulogic_vector(3 downto 0);
-        s:        out   std_ulogic;
-        cp1:      out   std_ulogic;
-        cp2:      out   std_ulogic);
+			--romcs_n:  out   std_logic;
+			--pgm_n:    out   std_logic;
+		
+			a:        out   std_logic_vector(14 downto 0);
+			d:        inout std_logic_vector(7 downto 0);
+
+			vgaR,vgaG,vgaB : out std_ulogic;
+			vgaHS, vgaVS   : out std_ulogic
+		
+        --d_lcd:    out   std_ulogic_vector(3 downto 0);
+        --s:        out   std_ulogic;
+        --cp1:      out   std_ulogic;
+        --cp2:      out   std_ulogic
+		  );
 end;
 
 -- the top level ------------------------------
@@ -265,8 +271,8 @@ begin
               n_m1,n_mreq,n_iorq,n_wr,n_rd,n_rfsh,
               n_nmi,n_halt,n_wait,n_romcs,n_ramcs,
               std_ulogic_vector(i_kbd_col),usa_uk,
-              i_video,i_n_sync,i_vsync,i_hsync,tape_in,
-              d_lcd,s,cp1,cp2);
+              i_video,i_n_sync,i_vsync,i_hsync,'0',
+              open,open,open,open);
 
   i_phi <= clock_2;
 
@@ -286,8 +292,13 @@ begin
 		end if;
     end if;
   end process;
-    
+
+  -- clock => 7.14Mhz => pixclock
+  -- clock_2 => 3.57Mhz => Z80
+  
   clock <= div50(2);
+
+  -- enable signals for scan doubler
   
   ena7 <= '1' when div50(2 downto 0)="000" else '0';
   ena14 <= '1' when div50(1 downto 0)="00" else '0';
@@ -296,7 +307,6 @@ begin
   --video <= '0' when i_n_sync='0'
   --    else 'Z' when i_video='0'
   --   else '1';
-  --video <= i_video;
 
   pixel <= '0' when i_n_sync='0' else not i_video;
   
@@ -310,16 +320,14 @@ begin
 	O_R(0) => vgaR,
 	O_G(0) => vgaG,
 	O_B(0) => vgaB,
-	O_HSYNC  => video,
-	O_VSYNC => tape_out,
+	O_HSYNC  => vgaHS,
+	O_VSYNC => vgaVS,
 	
 	ENA_6 => ena7,
 	ENA_12 => ena14,
 	
 	CLK => clk50);
   
-  -- clock => 7.14Mhz => pixclock
-  -- clock_2 => 3.57Mhz => Z80
     
 end;
 

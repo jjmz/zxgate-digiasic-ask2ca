@@ -8,9 +8,6 @@ kbd_clk => PS2_MatrixEncoder:c_PS2_MatrixEncoder.PS2_Clk
 kbd_data => PS2_MatrixEncoder:c_PS2_MatrixEncoder.PS2_Data
 v_inv => i_kbd_col[4].DATAB
 usa_uk => top:c_top.usa_uk
-video <= DBLSCAN:scan2x.O_HSYNC
-tape_in => top:c_top.tape_in
-tape_out <= DBLSCAN:scan2x.O_VSYNC
 oe_n <= T80s:c_Z80.RD_n
 we_n <= T80s:c_Z80.WR_n
 ramcs_n <= top:c_top.n_ramcs
@@ -40,13 +37,8 @@ d[7] <> d[7]
 vgaR <= DBLSCAN:scan2x.O_R[0]
 vgaG <= DBLSCAN:scan2x.O_G[0]
 vgaB <= DBLSCAN:scan2x.O_B[0]
-d_lcd[0] <= top:c_top.d_lcd[0]
-d_lcd[1] <= top:c_top.d_lcd[1]
-d_lcd[2] <= top:c_top.d_lcd[2]
-d_lcd[3] <= top:c_top.d_lcd[3]
-s <= top:c_top.s
-cp1 <= top:c_top.cp1
-cp2 <= top:c_top.cp2
+vgaHS <= DBLSCAN:scan2x.O_HSYNC
+vgaVS <= DBLSCAN:scan2x.O_VSYNC
 
 
 |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder
