@@ -1,6 +1,6 @@
 Analysis & Synthesis report for zxgate
-Fri Nov 20 11:55:14 2015
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Nov 23 17:31:49 2015
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -21,7 +21,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  13. General Register Statistics
  14. Inverted Register Statistics
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated
+ 16. Source assignments for rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated
  17. Source assignments for DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated
  18. Source assignments for DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1
  19. Source assignments for DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated
@@ -67,16 +67,16 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 20 11:55:14 2015           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Analysis & Synthesis Status        ; Successful - Mon Nov 23 17:31:49 2015           ;
+; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; zxgate                                          ;
 ; Top-level Entity Name              ; zx01xr                                          ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 2,803                                           ;
-;     Total combinational functions  ; 2,653                                           ;
+; Total logic elements               ; 2,809                                           ;
+;     Total combinational functions  ; 2,659                                           ;
 ;     Dedicated logic registers      ; 546                                             ;
 ; Total registers                    ; 546                                             ;
-; Total pins                         ; 37                                              ;
+; Total pins                         ; 39                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 68,608                                          ;
 ; Embedded Multiplier 9-bit elements ; 0                                               ;
@@ -175,50 +175,50 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 ; Processors                 ; Number ;
 +----------------------------+--------+
-; Number detected on machine ; 4      ;
+; Number detected on machine ; 2      ;
 ; Maximum allowed            ; 1      ;
 +----------------------------+--------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                              ;
-+------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path   ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                              ; Library ;
-+------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------+---------+
-; zx01/zx01xr.vhd                    ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx01/zx01xr.vhd                               ;         ;
-; zx97/video81.vhd                   ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/video81.vhd                              ;         ;
-; zx97/top.vhd                       ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/top.vhd                                  ;         ;
-; zx97/res_clk.vhd                   ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/res_clk.vhd                              ;         ;
-; zx97/modes97.vhd                   ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/modes97.vhd                              ;         ;
-; zx97/lcd97.vhd                     ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/lcd97.vhd                                ;         ;
-; zx97/io81.vhd                      ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/io81.vhd                                 ;         ;
-; zx97/busses.vhd                    ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx97/busses.vhd                               ;         ;
-; ext/ps2me.vhd                      ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/ext/ps2me.vhd                                 ;         ;
-; Z80/T80.vhd                        ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/Z80/T80.vhd                                   ;         ;
-; Z80/T80s.vhd                       ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/Z80/T80s.vhd                                  ;         ;
-; Z80/T80_Reg.vhd                    ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/Z80/T80_Reg.vhd                               ;         ;
-; Z80/T80_Pack.vhd                   ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/Z80/T80_Pack.vhd                              ;         ;
-; Z80/T80_MCode.vhd                  ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/Z80/T80_MCode.vhd                             ;         ;
-; Z80/T80_ALU.vhd                    ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/Z80/T80_ALU.vhd                               ;         ;
-; rom81.vhd                          ; yes             ; User Wizard-Generated File             ; /ssd/altera/projects/zxgate/rom81.vhd                                     ;         ;
-; zx01/scandbl.vhd                   ; yes             ; User VHDL File                         ; /ssd/altera/projects/zxgate/zx01/scandbl.vhd                              ;         ;
-; ramb4_s8_s8.vhd                    ; yes             ; User Wizard-Generated File             ; /ssd/altera/projects/zxgate/ramb4_s8_s8.vhd                               ;         ;
-; altsyncram.tdf                     ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc              ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                        ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                     ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal130.inc                     ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc        ;         ;
-; a_rdenreg.inc                      ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                         ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                         ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                       ; yes             ; Megafunction                           ; /ssd/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_qj91.tdf             ; yes             ; Auto-Generated Megafunction            ; /ssd/altera/projects/zxgate/db/altsyncram_qj91.tdf                        ;         ;
-; /home/jjm/sz81-2.1.7/data/zx81.hex ; yes             ; Auto-Found Memory Initialization File  ; /home/jjm/sz81-2.1.7/data/zx81.hex                                        ;         ;
-; db/decode_1oa.tdf                  ; yes             ; Auto-Generated Megafunction            ; /ssd/altera/projects/zxgate/db/decode_1oa.tdf                             ;         ;
-; db/mux_hib.tdf                     ; yes             ; Auto-Generated Megafunction            ; /ssd/altera/projects/zxgate/db/mux_hib.tdf                                ;         ;
-; db/altsyncram_d6n1.tdf             ; yes             ; Auto-Generated Megafunction            ; /ssd/altera/projects/zxgate/db/altsyncram_d6n1.tdf                        ;         ;
-; db/altsyncram_1us1.tdf             ; yes             ; Auto-Generated Megafunction            ; /ssd/altera/projects/zxgate/db/altsyncram_1us1.tdf                        ;         ;
-+------------------------------------+-----------------+----------------------------------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                           ;
++------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                                             ; Used in Netlist ; File Type                              ; File Name with Absolute Path                                                 ; Library ;
++------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
+; zx01/zx01xr.vhd                                                              ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx01/zx01xr.vhd              ;         ;
+; zx97/video81.vhd                                                             ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/video81.vhd             ;         ;
+; zx97/top.vhd                                                                 ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/top.vhd                 ;         ;
+; zx97/res_clk.vhd                                                             ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/res_clk.vhd             ;         ;
+; zx97/modes97.vhd                                                             ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/modes97.vhd             ;         ;
+; zx97/lcd97.vhd                                                               ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/lcd97.vhd               ;         ;
+; zx97/io81.vhd                                                                ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/io81.vhd                ;         ;
+; zx97/busses.vhd                                                              ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx97/busses.vhd              ;         ;
+; ext/ps2me.vhd                                                                ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/ext/ps2me.vhd                ;         ;
+; Z80/T80.vhd                                                                  ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/Z80/T80.vhd                  ;         ;
+; Z80/T80s.vhd                                                                 ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/Z80/T80s.vhd                 ;         ;
+; Z80/T80_Reg.vhd                                                              ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/Z80/T80_Reg.vhd              ;         ;
+; Z80/T80_Pack.vhd                                                             ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/Z80/T80_Pack.vhd             ;         ;
+; Z80/T80_MCode.vhd                                                            ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/Z80/T80_MCode.vhd            ;         ;
+; Z80/T80_ALU.vhd                                                              ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/Z80/T80_ALU.vhd              ;         ;
+; rom81.vhd                                                                    ; yes             ; User Wizard-Generated File             ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/rom81.vhd                    ;         ;
+; zx01/scandbl.vhd                                                             ; yes             ; User VHDL File                         ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/zx01/scandbl.vhd             ;         ;
+; ramb4_s8_s8.vhd                                                              ; yes             ; User Wizard-Generated File             ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/ramb4_s8_s8.vhd              ;         ;
+; altsyncram.tdf                                                               ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc                                                        ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; lpm_mux.inc                                                                  ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_decode.inc                                                               ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; aglobal130.inc                                                               ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc           ;         ;
+; a_rdenreg.inc                                                                ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; altrom.inc                                                                   ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                                                                   ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                                                                 ; yes             ; Megafunction                           ; /opt/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_vtc1.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/db/altsyncram_vtc1.tdf       ;         ;
+; /home/jjm/Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex ; yes             ; Auto-Found Memory Initialization File  ; /home/jjm/Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex ;         ;
+; db/decode_1oa.tdf                                                            ; yes             ; Auto-Generated Megafunction            ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/db/decode_1oa.tdf            ;         ;
+; db/mux_hib.tdf                                                               ; yes             ; Auto-Generated Megafunction            ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/db/mux_hib.tdf               ;         ;
+; db/altsyncram_d6n1.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/db/altsyncram_d6n1.tdf       ;         ;
+; db/altsyncram_1us1.tdf                                                       ; yes             ; Auto-Generated Megafunction            ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/db/altsyncram_1us1.tdf       ;         ;
++------------------------------------------------------------------------------+-----------------+----------------------------------------+------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------+
@@ -226,28 +226,28 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+-----------------------------------+
 ; Resource                                    ; Usage                             ;
 +---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 2,803                             ;
+; Estimated Total logic elements              ; 2,809                             ;
 ;                                             ;                                   ;
-; Total combinational functions               ; 2653                              ;
+; Total combinational functions               ; 2659                              ;
 ; Logic element usage by number of LUT inputs ;                                   ;
-;     -- 4 input functions                    ; 1880                              ;
-;     -- 3 input functions                    ; 434                               ;
-;     -- <=2 input functions                  ; 339                               ;
+;     -- 4 input functions                    ; 1887                              ;
+;     -- 3 input functions                    ; 436                               ;
+;     -- <=2 input functions                  ; 336                               ;
 ;                                             ;                                   ;
 ; Logic elements by mode                      ;                                   ;
-;     -- normal mode                          ; 2449                              ;
+;     -- normal mode                          ; 2455                              ;
 ;     -- arithmetic mode                      ; 204                               ;
 ;                                             ;                                   ;
 ; Total registers                             ; 546                               ;
 ;     -- Dedicated logic registers            ; 546                               ;
 ;     -- I/O registers                        ; 0                                 ;
 ;                                             ;                                   ;
-; I/O pins                                    ; 37                                ;
+; I/O pins                                    ; 39                                ;
 ; Total memory bits                           ; 68608                             ;
 ; Embedded Multiplier 9-bit elements          ; 0                                 ;
 ; Maximum fan-out node                        ; top:c_top|res_clk:c_res_clk|i_phi ;
 ; Maximum fan-out                             ; 509                               ;
-; Total fan-out                               ; 11741                             ;
+; Total fan-out                               ; 11770                             ;
 ; Average fan-out                             ; 3.60                              ;
 +---------------------------------------------+-----------------------------------+
 
@@ -257,7 +257,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                   ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                   ; Library Name ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |zx01xr                                      ; 2653 (29)         ; 546 (7)      ; 68608       ; 0            ; 0       ; 0         ; 37   ; 0            ; |zx01xr                                                                                                                               ; work         ;
+; |zx01xr                                      ; 2659 (29)         ; 546 (7)      ; 68608       ; 0            ; 0       ; 0         ; 39   ; 0            ; |zx01xr                                                                                                                               ; work         ;
 ;    |DBLSCAN:scan2x|                          ; 36 (36)           ; 35 (35)      ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x                                                                                                                ; work         ;
 ;       |ramb4_s8_s8:u_ram_a|                  ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a                                                                                            ; work         ;
 ;          |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component                                                            ; work         ;
@@ -268,44 +268,44 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;             |altsyncram_d6n1:auto_generated| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated                             ; work         ;
 ;                |altsyncram_1us1:altsyncram1| ; 0 (0)             ; 0 (0)        ; 1536        ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1 ; work         ;
 ;    |PS2_MatrixEncoder:c_PS2_MatrixEncoder|   ; 261 (261)         ; 103 (103)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder                                                                                         ; work         ;
-;    |T80s:c_Z80|                              ; 2207 (10)         ; 357 (12)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80                                                                                                                    ; work         ;
-;       |T80:u0|                               ; 2197 (898)        ; 345 (217)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0                                                                                                             ; work         ;
-;          |T80_ALU:alu|                       ; 512 (512)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu                                                                                                 ; work         ;
-;          |T80_MCode:mcode|                   ; 530 (530)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_MCode:mcode                                                                                             ; work         ;
+;    |T80s:c_Z80|                              ; 2211 (10)         ; 357 (12)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80                                                                                                                    ; work         ;
+;       |T80:u0|                               ; 2201 (899)        ; 345 (217)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0                                                                                                             ; work         ;
+;          |T80_ALU:alu|                       ; 507 (507)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu                                                                                                 ; work         ;
+;          |T80_MCode:mcode|                   ; 538 (538)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_MCode:mcode                                                                                             ; work         ;
 ;          |T80_Reg:Regs|                      ; 257 (257)         ; 128 (128)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs                                                                                                ; work         ;
 ;    |rom81:c_ROM81|                           ; 0 (0)             ; 1 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81                                                                                                                 ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)             ; 1 (0)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component                                                                                 ; work         ;
-;          |altsyncram_qj91:auto_generated|    ; 0 (0)             ; 1 (1)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated                                                  ; work         ;
-;    |top:c_top|                               ; 120 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top                                                                                                                     ; work         ;
-;       |busses:c_busses|                      ; 63 (63)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|busses:c_busses                                                                                                     ; work         ;
+;          |altsyncram_vtc1:auto_generated|    ; 0 (0)             ; 1 (1)        ; 65536       ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated                                                  ; work         ;
+;    |top:c_top|                               ; 122 (0)           ; 43 (0)       ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top                                                                                                                     ; work         ;
+;       |busses:c_busses|                      ; 64 (64)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|busses:c_busses                                                                                                     ; work         ;
 ;       |io81:c_io81|                          ; 5 (5)             ; 2 (2)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|io81:c_io81                                                                                                         ; work         ;
 ;       |modes97:c_modes97|                    ; 13 (13)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|modes97:c_modes97                                                                                                   ; work         ;
 ;       |res_clk:c_res_clk|                    ; 5 (5)             ; 4 (4)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|res_clk:c_res_clk                                                                                                   ; work         ;
-;       |video81:c_video81|                    ; 34 (34)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|video81:c_video81                                                                                                   ; work         ;
+;       |video81:c_video81|                    ; 35 (35)           ; 29 (29)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |zx01xr|top:c_top|video81:c_video81                                                                                                   ; work         ;
 +----------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                          ;
-+------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+------------------------------------+
-; Name                                                                                                                                     ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                ;
-+------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+------------------------------------+
-; DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 512          ; 8            ; 512          ; 8            ; 4096  ; None                               ;
-; DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 512          ; 8            ; 512          ; 8            ; 4096  ; None                               ;
-; rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated|ALTSYNCRAM                                                  ; AUTO ; ROM            ; 8192         ; 8            ; --           ; --           ; 65536 ; /home/jjm/sz81-2.1.7/data/zx81.hex ;
-+------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                                                                                                                                   ;
++------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------------------------------------------+
+; Name                                                                                                                                     ; Type ; Mode           ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF                                                                         ;
++------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------------------------------------------+
+; DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 512          ; 8            ; 512          ; 8            ; 4096  ; None                                                                        ;
+; DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b|altsyncram:altsyncram_component|altsyncram_d6n1:auto_generated|altsyncram_1us1:altsyncram1|ALTSYNCRAM ; AUTO ; True Dual Port ; 512          ; 8            ; 512          ; 8            ; 4096  ; None                                                                        ;
+; rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated|ALTSYNCRAM                                                  ; AUTO ; ROM            ; 8192         ; 8            ; --           ; --           ; 65536 ; ../../../Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex ;
++------------------------------------------------------------------------------------------------------------------------------------------+------+----------------+--------------+--------------+--------------+--------------+-------+-----------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis IP Cores Summary                                                                                                                    ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------+---------------------------------------------+
-; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                            ; IP Include File                             ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------+---------------------------------------------+
-; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |zx01xr|rom81:c_ROM81                      ; /ssd/altera/projects/zxgate/rom81.vhd       ;
-; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a ; /ssd/altera/projects/zxgate/ramb4_s8_s8.vhd ;
-; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b ; /ssd/altera/projects/zxgate/ramb4_s8_s8.vhd ;
-+--------+--------------+---------+--------------+--------------+--------------------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis IP Cores Summary                                                                                                                                        ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------------------------------------------------------+
+; Vendor ; IP Core Name ; Version ; Release Date ; License Type ; Entity Instance                            ; IP Include File                                                 ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------------------------------------------------------+
+; Altera ; ROM: 1-PORT  ; 13.0    ; N/A          ; N/A          ; |zx01xr|rom81:c_ROM81                      ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/rom81.vhd       ;
+; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_a ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/ramb4_s8_s8.vhd ;
+; Altera ; RAM: 2-PORT  ; 13.0    ; N/A          ; N/A          ; |zx01xr|DBLSCAN:scan2x|ramb4_s8_s8:u_ram_b ; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/ramb4_s8_s8.vhd ;
++--------+--------------+---------+--------------+--------------+--------------------------------------------+-----------------------------------------------------------------+
 
 
 Encoding Type:  One-Hot
@@ -378,11 +378,12 @@ Encoding Type:  One-Hot
 ; top:c_top|modes97:c_modes97|mode_rom0               ; 1       ;
 ; T80s:c_Z80|MREQ_n                                   ; 7       ;
 ; T80s:c_Z80|T80:u0|M1_n                              ; 7       ;
-; T80s:c_Z80|T80:u0|MCycle[0]                         ; 85      ;
+; T80s:c_Z80|IORQ_n                                   ; 3       ;
+; T80s:c_Z80|T80:u0|MCycle[0]                         ; 88      ;
 ; T80s:c_Z80|T80:u0|F[2]                              ; 8       ;
 ; T80s:c_Z80|T80:u0|F[7]                              ; 7       ;
 ; T80s:c_Z80|T80:u0|F[6]                              ; 11      ;
-; T80s:c_Z80|T80:u0|F[0]                              ; 14      ;
+; T80s:c_Z80|T80:u0|F[0]                              ; 13      ;
 ; T80s:c_Z80|T80:u0|SP[15]                            ; 5       ;
 ; T80s:c_Z80|T80:u0|ACC[7]                            ; 7       ;
 ; T80s:c_Z80|T80:u0|SP[14]                            ; 5       ;
@@ -407,7 +408,6 @@ Encoding Type:  One-Hot
 ; T80s:c_Z80|T80:u0|ACC[3]                            ; 9       ;
 ; T80s:c_Z80|T80:u0|SP[12]                            ; 5       ;
 ; T80s:c_Z80|T80:u0|ACC[4]                            ; 7       ;
-; T80s:c_Z80|IORQ_n                                   ; 3       ;
 ; T80s:c_Z80|T80:u0|F[4]                              ; 6       ;
 ; T80s:c_Z80|T80:u0|F[1]                              ; 20      ;
 ; T80s:c_Z80|T80:u0|Fp[2]                             ; 1       ;
@@ -442,71 +442,71 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|top:c_top|modes97:c_modes97|mode_romp[0]            ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ALU_Op_r[0]                       ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|top:c_top|modes97:c_modes97|mode_ram[1]             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ALU_Op_r[2]                       ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|RegAddrC[0]                       ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|Read_To_Reg_r[2]                  ;
-; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[21]       ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|XY_State[0]                       ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|top:c_top|res_clk:c_res_clk|timer[0]                ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|video_pixel[3]          ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|line_cnt[4]             ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|MCycle[2]                         ;
+; 3:1                ; 30 bits   ; 60 LEs        ; 30 LEs               ; 30 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[3]        ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|XY_State[1]                       ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|top:c_top|res_clk:c_res_clk|timer[2]                ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|video_pixel[6]          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|top:c_top|video81:c_video81|line_cnt[7]             ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|MCycle[1]                         ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix_Set    ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|DBLSCAN:scan2x|vs_cnt[0]                            ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TState[1]                         ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TState[2]                         ;
 ; 4:1                ; 7 bits    ; 14 LEs        ; 7 LEs                ; 7 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|R[6]                              ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|IR[3]                             ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[7][2]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[6][2]  ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|IR[1]                             ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[7][4]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[6][4]  ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[5][3]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[4][3]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[3][3]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[2][4]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[4][2]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[3][2]  ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[2][2]  ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[1][3]  ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[0][0]  ;
-; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusB[7]                           ;
-; 12:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusA[7]                           ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ISet[1]                           ;
-; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|RX_Bit_Cnt[3] ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[13]                       ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[7]                        ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[3]                        ;
-; 12:1               ; 7 bits    ; 56 LEs        ; 7 LEs                ; 49 LEs                 ; Yes        ; |zx01xr|top:c_top|lcd97:c_lcd97|line_cnt[4]                 ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Matrix[0][3]  ;
+; 11:1               ; 8 bits    ; 56 LEs        ; 48 LEs               ; 8 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusB[3]                           ;
+; 12:1               ; 8 bits    ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|BusA[2]                           ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ISet[0]                           ;
+; 7:1                ; 4 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|RX_Bit_Cnt[1] ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[9]                        ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[6]                        ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|TmpAddr[5]                        ;
+; 12:1               ; 7 bits    ; 56 LEs        ; 7 LEs                ; 49 LEs                 ; Yes        ; |zx01xr|top:c_top|lcd97:c_lcd97|line_cnt[2]                 ;
 ; 13:1               ; 7 bits    ; 56 LEs        ; 21 LEs               ; 35 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[7]                             ;
-; 13:1               ; 8 bits    ; 64 LEs        ; 40 LEs               ; 24 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[13]                            ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[1]                              ;
-; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[10]                             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[31]       ;
-; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|DO[6]                             ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[14]                            ;
-; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[4]                             ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ACC[1]                            ;
+; 13:1               ; 8 bits    ; 64 LEs        ; 40 LEs               ; 24 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|PC[9]                             ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 32 LEs               ; 64 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[4]                              ;
+; 19:1               ; 8 bits    ; 96 LEs        ; 48 LEs               ; 48 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|A[12]                             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Cnt[0]        ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|DO[5]                             ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[8]                             ;
+; 7:1                ; 8 bits    ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|SP[1]                             ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 24 LEs               ; 16 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|ACC[6]                            ;
 ; 18:1               ; 2 bits    ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |zx01xr|T80s:c_Z80|T80:u0|F[5]                              ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|Q_t                   ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |zx01xr|d_mem_i[4]                                          ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|DAA_Q[1]              ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |zx01xr|d_mem_i[1]                                          ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|DAA_Q[3]              ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|a_mem_h[13]               ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[1]                       ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux39                ;
-; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|Mux8                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[3]                       ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux41                ;
+; 8:1                ; 8 bits    ; 40 LEs        ; 16 LEs               ; 24 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|Mux14                 ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_ALU:alu|DAA_Q[6]              ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegDIL[7]                         ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux6                 ;
-; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux21                ;
-; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Mux12         ;
-; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[5]                ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegAddrA[1]                       ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[1]                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegDIH[6]                         ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux10                ;
+; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|T80_Reg:Regs|Mux31                ;
+; 8:1                ; 5 bits    ; 25 LEs        ; 25 LEs               ; 0 LEs                  ; No         ; |zx01xr|PS2_MatrixEncoder:c_PS2_MatrixEncoder|Mux8          ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[7]                ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegAddrA[0]                       ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|top:c_top|busses:c_busses|d_cpu_o[2]                ;
 ; 17:1               ; 4 bits    ; 44 LEs        ; 24 LEs               ; 20 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[0]                       ;
-; 19:1               ; 2 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegWEL                            ;
+; 19:1               ; 2 bits    ; 24 LEs        ; 4 LEs                ; 20 LEs                 ; No         ; |zx01xr|T80s:c_Z80|T80:u0|RegWEH                            ;
 ; 10:1               ; 2 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |zx01xr|T80s:c_Z80|T80:u0|Save_Mux[5]                       ;
 ; 10:1               ; 4 bits    ; 24 LEs        ; 16 LEs               ; 8 LEs                  ; No         ; |zx01xr|top:c_top|lcd97:c_lcd97|Selector1                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------+
 
 
 +-----------------------------------------------------------------------------------------------------+
-; Source assignments for rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated ;
+; Source assignments for rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated ;
 +---------------------------------+--------------------+------+---------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                    ;
 +---------------------------------+--------------------+------+---------------------------------------+
@@ -617,64 +617,64 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+--------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: rom81:c_ROM81|altsyncram:altsyncram_component ;
-+------------------------------------+------------------------------------+------------------+
-; Parameter Name                     ; Value                              ; Type             ;
-+------------------------------------+------------------------------------+------------------+
-; BYTE_SIZE_BLOCK                    ; 8                                  ; Untyped          ;
-; AUTO_CARRY_CHAINS                  ; ON                                 ; AUTO_CARRY       ;
-; IGNORE_CARRY_BUFFERS               ; OFF                                ; IGNORE_CARRY     ;
-; AUTO_CASCADE_CHAINS                ; ON                                 ; AUTO_CASCADE     ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                                ; IGNORE_CASCADE   ;
-; WIDTH_BYTEENA                      ; 1                                  ; Untyped          ;
-; OPERATION_MODE                     ; ROM                                ; Untyped          ;
-; WIDTH_A                            ; 8                                  ; Signed Integer   ;
-; WIDTHAD_A                          ; 13                                 ; Signed Integer   ;
-; NUMWORDS_A                         ; 8192                               ; Signed Integer   ;
-; OUTDATA_REG_A                      ; UNREGISTERED                       ; Untyped          ;
-; ADDRESS_ACLR_A                     ; NONE                               ; Untyped          ;
-; OUTDATA_ACLR_A                     ; NONE                               ; Untyped          ;
-; WRCONTROL_ACLR_A                   ; NONE                               ; Untyped          ;
-; INDATA_ACLR_A                      ; NONE                               ; Untyped          ;
-; BYTEENA_ACLR_A                     ; NONE                               ; Untyped          ;
-; WIDTH_B                            ; 1                                  ; Untyped          ;
-; WIDTHAD_B                          ; 1                                  ; Untyped          ;
-; NUMWORDS_B                         ; 1                                  ; Untyped          ;
-; INDATA_REG_B                       ; CLOCK1                             ; Untyped          ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                             ; Untyped          ;
-; RDCONTROL_REG_B                    ; CLOCK1                             ; Untyped          ;
-; ADDRESS_REG_B                      ; CLOCK1                             ; Untyped          ;
-; OUTDATA_REG_B                      ; UNREGISTERED                       ; Untyped          ;
-; BYTEENA_REG_B                      ; CLOCK1                             ; Untyped          ;
-; INDATA_ACLR_B                      ; NONE                               ; Untyped          ;
-; WRCONTROL_ACLR_B                   ; NONE                               ; Untyped          ;
-; ADDRESS_ACLR_B                     ; NONE                               ; Untyped          ;
-; OUTDATA_ACLR_B                     ; NONE                               ; Untyped          ;
-; RDCONTROL_ACLR_B                   ; NONE                               ; Untyped          ;
-; BYTEENA_ACLR_B                     ; NONE                               ; Untyped          ;
-; WIDTH_BYTEENA_A                    ; 1                                  ; Signed Integer   ;
-; WIDTH_BYTEENA_B                    ; 1                                  ; Untyped          ;
-; RAM_BLOCK_TYPE                     ; AUTO                               ; Untyped          ;
-; BYTE_SIZE                          ; 8                                  ; Untyped          ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                          ; Untyped          ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ               ; Untyped          ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ               ; Untyped          ;
-; INIT_FILE                          ; /home/jjm/sz81-2.1.7/data/zx81.hex ; Untyped          ;
-; INIT_FILE_LAYOUT                   ; PORT_A                             ; Untyped          ;
-; MAXIMUM_DEPTH                      ; 0                                  ; Untyped          ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS                             ; Untyped          ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL                             ; Untyped          ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                             ; Untyped          ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                             ; Untyped          ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                    ; Untyped          ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                    ; Untyped          ;
-; ENABLE_ECC                         ; FALSE                              ; Untyped          ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                              ; Untyped          ;
-; WIDTH_ECCSTATUS                    ; 3                                  ; Untyped          ;
-; DEVICE_FAMILY                      ; Cyclone II                         ; Untyped          ;
-; CBXI_PARAMETER                     ; altsyncram_qj91                    ; Untyped          ;
-+------------------------------------+------------------------------------+------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rom81:c_ROM81|altsyncram:altsyncram_component                                        ;
++------------------------------------+-----------------------------------------------------------------------------+----------------+
+; Parameter Name                     ; Value                                                                       ; Type           ;
++------------------------------------+-----------------------------------------------------------------------------+----------------+
+; BYTE_SIZE_BLOCK                    ; 8                                                                           ; Untyped        ;
+; AUTO_CARRY_CHAINS                  ; ON                                                                          ; AUTO_CARRY     ;
+; IGNORE_CARRY_BUFFERS               ; OFF                                                                         ; IGNORE_CARRY   ;
+; AUTO_CASCADE_CHAINS                ; ON                                                                          ; AUTO_CASCADE   ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                                                                         ; IGNORE_CASCADE ;
+; WIDTH_BYTEENA                      ; 1                                                                           ; Untyped        ;
+; OPERATION_MODE                     ; ROM                                                                         ; Untyped        ;
+; WIDTH_A                            ; 8                                                                           ; Signed Integer ;
+; WIDTHAD_A                          ; 13                                                                          ; Signed Integer ;
+; NUMWORDS_A                         ; 8192                                                                        ; Signed Integer ;
+; OUTDATA_REG_A                      ; UNREGISTERED                                                                ; Untyped        ;
+; ADDRESS_ACLR_A                     ; NONE                                                                        ; Untyped        ;
+; OUTDATA_ACLR_A                     ; NONE                                                                        ; Untyped        ;
+; WRCONTROL_ACLR_A                   ; NONE                                                                        ; Untyped        ;
+; INDATA_ACLR_A                      ; NONE                                                                        ; Untyped        ;
+; BYTEENA_ACLR_A                     ; NONE                                                                        ; Untyped        ;
+; WIDTH_B                            ; 1                                                                           ; Untyped        ;
+; WIDTHAD_B                          ; 1                                                                           ; Untyped        ;
+; NUMWORDS_B                         ; 1                                                                           ; Untyped        ;
+; INDATA_REG_B                       ; CLOCK1                                                                      ; Untyped        ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1                                                                      ; Untyped        ;
+; RDCONTROL_REG_B                    ; CLOCK1                                                                      ; Untyped        ;
+; ADDRESS_REG_B                      ; CLOCK1                                                                      ; Untyped        ;
+; OUTDATA_REG_B                      ; UNREGISTERED                                                                ; Untyped        ;
+; BYTEENA_REG_B                      ; CLOCK1                                                                      ; Untyped        ;
+; INDATA_ACLR_B                      ; NONE                                                                        ; Untyped        ;
+; WRCONTROL_ACLR_B                   ; NONE                                                                        ; Untyped        ;
+; ADDRESS_ACLR_B                     ; NONE                                                                        ; Untyped        ;
+; OUTDATA_ACLR_B                     ; NONE                                                                        ; Untyped        ;
+; RDCONTROL_ACLR_B                   ; NONE                                                                        ; Untyped        ;
+; BYTEENA_ACLR_B                     ; NONE                                                                        ; Untyped        ;
+; WIDTH_BYTEENA_A                    ; 1                                                                           ; Signed Integer ;
+; WIDTH_BYTEENA_B                    ; 1                                                                           ; Untyped        ;
+; RAM_BLOCK_TYPE                     ; AUTO                                                                        ; Untyped        ;
+; BYTE_SIZE                          ; 8                                                                           ; Untyped        ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                                                   ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ                                                        ; Untyped        ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ                                                        ; Untyped        ;
+; INIT_FILE                          ; ../../../Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex ; Untyped        ;
+; INIT_FILE_LAYOUT                   ; PORT_A                                                                      ; Untyped        ;
+; MAXIMUM_DEPTH                      ; 0                                                                           ; Untyped        ;
+; CLOCK_ENABLE_INPUT_A               ; BYPASS                                                                      ; Untyped        ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL                                                                      ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_A              ; BYPASS                                                                      ; Untyped        ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL                                                                      ; Untyped        ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN                                                             ; Untyped        ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN                                                             ; Untyped        ;
+; ENABLE_ECC                         ; FALSE                                                                       ; Untyped        ;
+; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                                                                       ; Untyped        ;
+; WIDTH_ECCSTATUS                    ; 3                                                                           ; Untyped        ;
+; DEVICE_FAMILY                      ; Cyclone II                                                                  ; Untyped        ;
+; CBXI_PARAMETER                     ; altsyncram_vtc1                                                             ; Untyped        ;
++------------------------------------+-----------------------------------------------------------------------------+----------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -881,7 +881,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; oe_cpu  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; oe_mem  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; n_romcs ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; tape_in ; Input  ; Info     ; Stuck at GND                                                                        ;
 ; d_lcd   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; s       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; cp1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
@@ -915,7 +914,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:13     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -923,9 +922,9 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
+Info: Running Quartus II 32-bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Fri Nov 20 11:54:58 2015
+    Info: Processing started: Mon Nov 23 17:31:32 2015
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off zxgate -c zxgate
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file zx01/zx01xr.vhd
@@ -983,9 +982,9 @@ Info (12021): Found 2 design units, including 1 entities, in source file ramb4_s
     Info (12023): Found entity 1: ramb4_s8_s8
 Info (12127): Elaborating entity "zx01xr" for the top level hierarchy
 Warning (10036): Verilog HDL or VHDL warning at zx01xr.vhd(151): object "n_romcs" assigned a value but never read
-Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(313): port or argument "O_R" has 2/3 unassociated elements
-Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(313): port or argument "O_G" has 2/3 unassociated elements
-Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(313): port or argument "O_B" has 1/2 unassociated elements
+Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(314): port or argument "O_R" has 2/3 unassociated elements
+Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(314): port or argument "O_G" has 2/3 unassociated elements
+Critical Warning (10920): VHDL Incomplete Partial Association warning at zx01xr.vhd(314): port or argument "O_B" has 1/2 unassociated elements
 Info (12128): Elaborating entity "PS2_MatrixEncoder" for hierarchy "PS2_MatrixEncoder:c_PS2_MatrixEncoder"
 Info (12128): Elaborating entity "T80s" for hierarchy "T80s:c_Z80"
 Info (12128): Elaborating entity "T80" for hierarchy "T80s:c_Z80|T80:u0"
@@ -998,7 +997,7 @@ Info (12130): Elaborated megafunction instantiation "rom81:c_ROM81|altsyncram:al
 Info (12133): Instantiated megafunction "rom81:c_ROM81|altsyncram:altsyncram_component" with the following parameter:
     Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
     Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "/home/jjm/sz81-2.1.7/data/zx81.hex"
+    Info (12134): Parameter "init_file" = "../../../Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
     Info (12134): Parameter "lpm_type" = "altsyncram"
@@ -1009,15 +1008,15 @@ Info (12133): Instantiated megafunction "rom81:c_ROM81|altsyncram:altsyncram_com
     Info (12134): Parameter "widthad_a" = "13"
     Info (12134): Parameter "width_a" = "8"
     Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_qj91.tdf
-    Info (12023): Found entity 1: altsyncram_qj91
-Info (12128): Elaborating entity "altsyncram_qj91" for hierarchy "rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_vtc1.tdf
+    Info (12023): Found entity 1: altsyncram_vtc1
+Info (12128): Elaborating entity "altsyncram_vtc1" for hierarchy "rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_1oa.tdf
     Info (12023): Found entity 1: decode_1oa
-Info (12128): Elaborating entity "decode_1oa" for hierarchy "rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated|decode_1oa:deep_decode"
+Info (12128): Elaborating entity "decode_1oa" for hierarchy "rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated|decode_1oa:deep_decode"
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_hib.tdf
     Info (12023): Found entity 1: mux_hib
-Info (12128): Elaborating entity "mux_hib" for hierarchy "rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_qj91:auto_generated|mux_hib:mux2"
+Info (12128): Elaborating entity "mux_hib" for hierarchy "rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated|mux_hib:mux2"
 Info (12128): Elaborating entity "top" for hierarchy "top:c_top"
 Info (12128): Elaborating entity "res_clk" for hierarchy "top:c_top|res_clk:c_res_clk"
 Info (12128): Elaborating entity "modes97" for hierarchy "top:c_top|modes97:c_modes97"
@@ -1076,16 +1075,16 @@ Critical Warning (18061): Ignored Power-Up Level option on the following registe
 Info (17049): 17 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2928 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 23 output pins
+Info (21057): Implemented 2936 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 7 input pins
+    Info (21059): Implemented 24 output pins
     Info (21060): Implemented 8 bidirectional pins
-    Info (21061): Implemented 2869 logic cells
+    Info (21061): Implemented 2875 logic cells
     Info (21064): Implemented 22 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 674 megabytes
-    Info: Processing ended: Fri Nov 20 11:55:14 2015
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus II 32-bit Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 380 megabytes
+    Info: Processing ended: Mon Nov 23 17:31:49 2015
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:17
 
 

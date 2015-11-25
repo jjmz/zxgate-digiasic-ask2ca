@@ -3,16 +3,20 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow Model Setup 'clk50'
-Slack : 6.943
+Slack : 6.361
 TNS   : 0.000
 
 Type  : Slow Model Setup 'clock'
-Slack : 127.198
+Slack : 125.937
 TNS   : 0.000
 
 Type  : Slow Model Setup 'phi'
-Slack : 129.591
+Slack : 127.974
 TNS   : 0.000
+
+Type  : Slow Model Hold 'phi'
+Slack : -1.124
+TNS   : -14.185
 
 Type  : Slow Model Hold 'clk50'
 Slack : 0.499
@@ -22,16 +26,12 @@ Type  : Slow Model Hold 'clock'
 Slack : 0.499
 TNS   : 0.000
 
-Type  : Slow Model Hold 'phi'
-Slack : 0.499
-TNS   : 0.000
-
 Type  : Slow Model Recovery 'phi'
-Slack : 275.338
+Slack : 275.331
 TNS   : 0.000
 
 Type  : Slow Model Removal 'phi'
-Slack : 1.358
+Slack : 1.921
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'clk50'
@@ -47,20 +47,20 @@ Slack : 137.223
 TNS   : 0.000
 
 Type  : Fast Model Setup 'clk50'
-Slack : 8.899
+Slack : 8.746
 TNS   : 0.000
 
 Type  : Fast Model Setup 'clock'
-Slack : 134.910
+Slack : 134.496
 TNS   : 0.000
 
 Type  : Fast Model Setup 'phi'
-Slack : 135.910
+Slack : 135.413
 TNS   : 0.000
 
 Type  : Fast Model Hold 'phi'
-Slack : -0.249
-TNS   : -1.234
+Slack : -0.838
+TNS   : -22.766
 
 Type  : Fast Model Hold 'clk50'
 Slack : 0.215
@@ -71,11 +71,11 @@ Slack : 0.215
 TNS   : 0.000
 
 Type  : Fast Model Recovery 'phi'
-Slack : 277.876
+Slack : 277.822
 TNS   : 0.000
 
 Type  : Fast Model Removal 'phi'
-Slack : 0.593
+Slack : 0.775
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'clk50'

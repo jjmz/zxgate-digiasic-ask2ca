@@ -59,7 +59,7 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 CHIP  "zxgate"  ASSIGNED TO AN: EP2C5T144C8
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
@@ -199,8 +199,8 @@ RESERVED_INPUT               : 132       :        :                   :         
 kbd_data                     : 133       : input  : 3.3-V LVTTL       :         : 2         : Y              
 kbd_clk                      : 134       : input  : 3.3-V LVTTL       :         : 2         : Y              
 RESERVED_INPUT               : 135       :        :                   :         : 2         :                
-RESERVED_INPUT               : 136       :        :                   :         : 2         :                
-RESERVED_INPUT               : 137       :        :                   :         : 2         :                
+tape_in                      : 136       : input  : 3.3-V LVTTL       :         : 2         : Y              
+tape_out                     : 137       : output : 3.3-V LVTTL       :         : 2         : Y              
 VCCIO2                       : 138       : power  :                   : 3.3V    : 2         :                
 rst_n                        : 139       : input  : 3.3-V LVTTL       :         : 2         : Y              
 GND                          : 140       : gnd    :                   :         :           :                

@@ -118,4 +118,6 @@ set_location_assignment PIN_120 -to vgaB
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_location_assignment PIN_126 -to vgaHS
 set_location_assignment PIN_125 -to vgaVS
+set_location_assignment PIN_136 -to tape_in
+set_location_assignment PIN_137 -to tape_out
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

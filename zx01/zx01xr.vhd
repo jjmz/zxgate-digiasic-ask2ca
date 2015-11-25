@@ -21,8 +21,8 @@ entity zx01xr is
         usa_uk:   in   	std_ulogic;
 		  
         --video:    out   std_ulogic;
-        --tape_in:  in    std_ulogic;
-        --tape_out: out   std_ulogic;
+        tape_in:  in    std_ulogic;
+        tape_out: out   std_ulogic;
 		  
 			oe_n:     out   std_logic;
 			we_n:     out   std_logic;
@@ -271,7 +271,7 @@ begin
               n_m1,n_mreq,n_iorq,n_wr,n_rd,n_rfsh,
               n_nmi,n_halt,n_wait,n_romcs,n_ramcs,
               std_ulogic_vector(i_kbd_col),usa_uk,
-              i_video,i_n_sync,i_vsync,i_hsync,'0',
+              i_video,i_n_sync,i_vsync,i_hsync,tape_in,
               open,open,open,open);
 
   i_phi <= clock_2;
@@ -303,7 +303,8 @@ begin
   ena7 <= '1' when div50(2 downto 0)="000" else '0';
   ena14 <= '1' when div50(1 downto 0)="00" else '0';
   
-  --tape_out <= i_n_sync;		  
+  tape_out <= i_n_sync;		  
+  
   --video <= '0' when i_n_sync='0'
   --    else 'Z' when i_video='0'
   --   else '1';

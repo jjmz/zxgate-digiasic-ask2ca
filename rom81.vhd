@@ -85,7 +85,7 @@ BEGIN
 	GENERIC MAP (
 		clock_enable_input_a => "BYPASS",
 		clock_enable_output_a => "BYPASS",
-		init_file => "/home/jjm/sz81-2.1.7/data/zx81.hex",
+		init_file => "../../../Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex",
 		intended_device_family => "Cyclone II",
 		lpm_hint => "ENABLE_RUNTIME_MOD=NO",
 		lpm_type => "altsyncram",
@@ -127,7 +127,7 @@ END SYN;
 -- Retrieval info: PRIVATE: JTAG_ENABLED NUMERIC "0"
 -- Retrieval info: PRIVATE: JTAG_ID STRING "NONE"
 -- Retrieval info: PRIVATE: MAXIMUM_DEPTH NUMERIC "0"
--- Retrieval info: PRIVATE: MIFfilename STRING "/home/jjm/sz81-2.1.7/data/zx81.hex"
+-- Retrieval info: PRIVATE: MIFfilename STRING "../../../Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex"
 -- Retrieval info: PRIVATE: NUMWORDS_A NUMERIC "8192"
 -- Retrieval info: PRIVATE: RAM_BLOCK_TYPE NUMERIC "0"
 -- Retrieval info: PRIVATE: RegAddr NUMERIC "1"
@@ -141,7 +141,7 @@ END SYN;
 -- Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_INPUT_A STRING "BYPASS"
 -- Retrieval info: CONSTANT: CLOCK_ENABLE_OUTPUT_A STRING "BYPASS"
--- Retrieval info: CONSTANT: INIT_FILE STRING "/home/jjm/sz81-2.1.7/data/zx81.hex"
+-- Retrieval info: CONSTANT: INIT_FILE STRING "../../../Dropbox/chibi-stm32f103/ChibiOS_2.6.5/demos/zx81emu/Z80/open81.hex"
 -- Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "Cyclone II"
 -- Retrieval info: CONSTANT: LPM_HINT STRING "ENABLE_RUNTIME_MOD=NO"
 -- Retrieval info: CONSTANT: LPM_TYPE STRING "altsyncram"
