@@ -1,6 +1,6 @@
 EDA Netlist Writer report for zxgate
-Mon Nov 23 17:32:16 2015
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Nov 26 12:12:36 2015
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Nov 23 17:32:16 2015 ;
+; EDA Netlist Writer Status ; Successful - Thu Nov 26 12:12:36 2015 ;
 ; Revision Name             ; zxgate                                ;
 ; Top-level Entity Name     ; zx01xr                                ;
 ; Family                    ; Cyclone II                            ;
@@ -66,30 +66,30 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                              ;
-+-----------------------------------------------------------------------------------------+
-; Generated Files                                                                         ;
-+-----------------------------------------------------------------------------------------+
-; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/simulation/modelsim/zxgate.vho          ;
-; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/simulation/modelsim/zxgate_fast.vho     ;
-; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/simulation/modelsim/zxgate_vhd.sdo      ;
-; /home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/simulation/modelsim/zxgate_vhd_fast.sdo ;
-+-----------------------------------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Simulation Generated Files                                          ;
++---------------------------------------------------------------------+
+; Generated Files                                                     ;
++---------------------------------------------------------------------+
+; /ssd/altera/projects/zxgate/simulation/modelsim/zxgate.vho          ;
+; /ssd/altera/projects/zxgate/simulation/modelsim/zxgate_fast.vho     ;
+; /ssd/altera/projects/zxgate/simulation/modelsim/zxgate_vhd.sdo      ;
+; /ssd/altera/projects/zxgate/simulation/modelsim/zxgate_vhd_fast.sdo ;
++---------------------------------------------------------------------+
 
 
 +-----------------------------+
 ; EDA Netlist Writer Messages ;
 +-----------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 32-bit EDA Netlist Writer
+Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Nov 23 17:32:14 2015
+    Info: Processing started: Thu Nov 26 12:12:34 2015
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off zxgate -c zxgate
-Info (204026): Generated files "zxgate.vho", "zxgate_fast.vho", "zxgate_vhd.sdo" and "zxgate_vhd_fast.sdo" in directory "/home/jjm/Desktop/ASK2CA/zxgate-digiasic-ask2ca/simulation/modelsim/" for EDA simulation tool
-Info: Quartus II 32-bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 335 megabytes
-    Info: Processing ended: Mon Nov 23 17:32:16 2015
+Info (204026): Generated files "zxgate.vho", "zxgate_fast.vho", "zxgate_vhd.sdo" and "zxgate_vhd_fast.sdo" in directory "/ssd/altera/projects/zxgate/simulation/modelsim/" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 834 megabytes
+    Info: Processing ended: Thu Nov 26 12:12:36 2015
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

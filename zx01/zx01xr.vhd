@@ -185,6 +185,10 @@ component DBLSCAN
   signal i_vsync: std_ulogic;
   signal i_hsync: std_ulogic;
   
+  signal tape_in_filtered: std_ulogic;
+  signal tape_in_z1, tape_in_z2 : std_ulogic;
+  signal audio_div: unsigned(11 downto 0);
+  
 begin
 
   oe_n <= n_rd;
@@ -271,7 +275,7 @@ begin
               n_m1,n_mreq,n_iorq,n_wr,n_rd,n_rfsh,
               n_nmi,n_halt,n_wait,n_romcs,n_ramcs,
               std_ulogic_vector(i_kbd_col),usa_uk,
-              i_video,i_n_sync,i_vsync,i_hsync,tape_in,
+              i_video,i_n_sync,i_vsync,i_hsync,tape_in_filtered,
               open,open,open,open);
 
   i_phi <= clock_2;
@@ -290,9 +294,26 @@ begin
 		else
 		 div50 <= div50 + 1;
 		end if;
+		
+		audio_div <= audio_div + 1;
+		
     end if;
   end process;
 
+  
+  process(audio_div(10))
+  begin
+   if audio_div(10)'event and audio_div(10) = '1' then
+	 tape_in_z2 <= tape_in_z1;
+	 tape_in_z1 <= tape_in;
+	 if ((tape_in_z2='0' and tape_in_z1='1' and tape_in='0') or (tape_in_z2='1' and tape_in_z1='0' and tape_in='1')) then
+	   tape_in_filtered <= tape_in;
+	 else
+	   tape_in_filtered <= tape_in_z1;
+	 end if;
+	end if;
+  end process;
+  
   -- clock => 7.14Mhz => pixclock
   -- clock_2 => 3.57Mhz => Z80
   
@@ -303,7 +324,9 @@ begin
   ena7 <= '1' when div50(2 downto 0)="000" else '0';
   ena14 <= '1' when div50(1 downto 0)="00" else '0';
   
-  tape_out <= i_n_sync;		  
+  --tape_out <= i_n_sync;		  
+  --tape_out <= tape_in_filtered;
+  tape_out <= '1';
   
   --video <= '0' when i_n_sync='0'
   --    else 'Z' when i_video='0'

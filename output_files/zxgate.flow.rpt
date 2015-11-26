@@ -1,6 +1,6 @@
 Flow report for zxgate
-Mon Nov 23 17:32:16 2015
-Quartus II 32-bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Thu Nov 26 12:12:36 2015
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 23 17:32:16 2015           ;
-; Quartus II 32-bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Flow Status                        ; Successful - Thu Nov 26 12:12:36 2015           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; zxgate                                          ;
 ; Top-level Entity Name              ; zx01xr                                          ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C5T144C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 2,674 / 4,608 ( 58 % )                          ;
-;     Total combinational functions  ; 2,660 / 4,608 ( 58 % )                          ;
-;     Dedicated logic registers      ; 546 / 4,608 ( 12 % )                            ;
-; Total registers                    ; 546                                             ;
+; Total logic elements               ; 2,685 / 4,608 ( 58 % )                          ;
+;     Total combinational functions  ; 2,667 / 4,608 ( 58 % )                          ;
+;     Dedicated logic registers      ; 560 / 4,608 ( 12 % )                            ;
+; Total registers                    ; 560                                             ;
 ; Total pins                         ; 39 / 89 ( 44 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 68,608 / 119,808 ( 57 % )                       ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2015 17:31:33 ;
+; Start date & time ; 11/26/2015 12:11:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; zxgate              ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                                 ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                           ; 163683361976954.144829629313008       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                           ; 109956459132.144853631508590          ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT                          ; Vhdl                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                             ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
 ; IP_TOOL_NAME                                    ; ROM: 1-PORT                           ; --            ; --          ; --             ;
@@ -107,26 +107,26 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:17     ; 1.0                     ; 380 MB              ; 00:00:16                           ;
-; Fitter                    ; 00:00:15     ; 1.0                     ; 423 MB              ; 00:00:15                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 325 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 323 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 325 MB              ; 00:00:02                           ;
-; Total                     ; 00:00:37     ; --                      ; --                  ; 00:00:35                           ;
+; Analysis & Synthesis      ; 00:00:15     ; 1.0                     ; 660 MB              ; 00:00:15                           ;
+; Fitter                    ; 00:00:13     ; 1.0                     ; 668 MB              ; 00:00:13                           ;
+; Assembler                 ; 00:00:01     ; 1.0                     ; 544 MB              ; 00:00:01                           ;
+; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 530 MB              ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 827 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:32     ; --                      ; --                  ; 00:00:32                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                           ;
-+---------------------------+------------------+--------------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name      ; OS Version ; Processor type ;
-+---------------------------+------------------+--------------+------------+----------------+
-; Analysis & Synthesis      ; jjm-nas          ; Ubuntu 15.10 ; 15         ; x86_64         ;
-; Fitter                    ; jjm-nas          ; Ubuntu 15.10 ; 15         ; x86_64         ;
-; Assembler                 ; jjm-nas          ; Ubuntu 15.10 ; 15         ; x86_64         ;
-; TimeQuest Timing Analyzer ; jjm-nas          ; Ubuntu 15.10 ; 15         ; x86_64         ;
-; EDA Netlist Writer        ; jjm-nas          ; Ubuntu 15.10 ; 15         ; x86_64         ;
-+---------------------------+------------------+--------------+------------+----------------+
++---------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                             ;
++---------------------------+------------------+----------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name        ; OS Version ; Processor type ;
++---------------------------+------------------+----------------+------------+----------------+
+; Analysis & Synthesis      ; ubuntu-jjm7      ; Ubuntu 14.04.3 ; 14         ; x86_64         ;
+; Fitter                    ; ubuntu-jjm7      ; Ubuntu 14.04.3 ; 14         ; x86_64         ;
+; Assembler                 ; ubuntu-jjm7      ; Ubuntu 14.04.3 ; 14         ; x86_64         ;
+; TimeQuest Timing Analyzer ; ubuntu-jjm7      ; Ubuntu 14.04.3 ; 14         ; x86_64         ;
+; EDA Netlist Writer        ; ubuntu-jjm7      ; Ubuntu 14.04.3 ; 14         ; x86_64         ;
++---------------------------+------------------+----------------+------------+----------------+
 
 
 ------------

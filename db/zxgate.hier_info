@@ -1,6 +1,18 @@
 |zx01xr
 rst_n => s_n_reset.ACLR
 clk50 => DBLSCAN:scan2x.CLK
+clk50 => audio_div[0].CLK
+clk50 => audio_div[1].CLK
+clk50 => audio_div[2].CLK
+clk50 => audio_div[3].CLK
+clk50 => audio_div[4].CLK
+clk50 => audio_div[5].CLK
+clk50 => audio_div[6].CLK
+clk50 => audio_div[7].CLK
+clk50 => audio_div[8].CLK
+clk50 => audio_div[9].CLK
+clk50 => audio_div[10].CLK
+clk50 => audio_div[11].CLK
 clk50 => div50[0].CLK
 clk50 => div50[1].CLK
 clk50 => div50[2].CLK
@@ -8,8 +20,11 @@ kbd_clk => PS2_MatrixEncoder:c_PS2_MatrixEncoder.PS2_Clk
 kbd_data => PS2_MatrixEncoder:c_PS2_MatrixEncoder.PS2_Data
 v_inv => i_kbd_col[4].DATAB
 usa_uk => top:c_top.usa_uk
-tape_in => top:c_top.tape_in
-tape_out <= top:c_top.n_sync
+tape_in => process_3.IN1
+tape_in => tape_in_filtered.DATAB
+tape_in => tape_in_z1.DATAIN
+tape_in => process_3.IN1
+tape_out <= <VCC>
 oe_n <= T80s:c_Z80.RD_n
 we_n <= T80s:c_Z80.WR_n
 ramcs_n <= top:c_top.n_ramcs
@@ -5747,23 +5762,23 @@ data_a[5] => ~NO_FANOUT~
 data_a[6] => ~NO_FANOUT~
 data_a[7] => ~NO_FANOUT~
 data_b[0] => ~NO_FANOUT~
-address_a[0] => altsyncram_vtc1:auto_generated.address_a[0]
-address_a[1] => altsyncram_vtc1:auto_generated.address_a[1]
-address_a[2] => altsyncram_vtc1:auto_generated.address_a[2]
-address_a[3] => altsyncram_vtc1:auto_generated.address_a[3]
-address_a[4] => altsyncram_vtc1:auto_generated.address_a[4]
-address_a[5] => altsyncram_vtc1:auto_generated.address_a[5]
-address_a[6] => altsyncram_vtc1:auto_generated.address_a[6]
-address_a[7] => altsyncram_vtc1:auto_generated.address_a[7]
-address_a[8] => altsyncram_vtc1:auto_generated.address_a[8]
-address_a[9] => altsyncram_vtc1:auto_generated.address_a[9]
-address_a[10] => altsyncram_vtc1:auto_generated.address_a[10]
-address_a[11] => altsyncram_vtc1:auto_generated.address_a[11]
-address_a[12] => altsyncram_vtc1:auto_generated.address_a[12]
+address_a[0] => altsyncram_iq71:auto_generated.address_a[0]
+address_a[1] => altsyncram_iq71:auto_generated.address_a[1]
+address_a[2] => altsyncram_iq71:auto_generated.address_a[2]
+address_a[3] => altsyncram_iq71:auto_generated.address_a[3]
+address_a[4] => altsyncram_iq71:auto_generated.address_a[4]
+address_a[5] => altsyncram_iq71:auto_generated.address_a[5]
+address_a[6] => altsyncram_iq71:auto_generated.address_a[6]
+address_a[7] => altsyncram_iq71:auto_generated.address_a[7]
+address_a[8] => altsyncram_iq71:auto_generated.address_a[8]
+address_a[9] => altsyncram_iq71:auto_generated.address_a[9]
+address_a[10] => altsyncram_iq71:auto_generated.address_a[10]
+address_a[11] => altsyncram_iq71:auto_generated.address_a[11]
+address_a[12] => altsyncram_iq71:auto_generated.address_a[12]
 address_b[0] => ~NO_FANOUT~
 addressstall_a => ~NO_FANOUT~
 addressstall_b => ~NO_FANOUT~
-clock0 => altsyncram_vtc1:auto_generated.clock0
+clock0 => altsyncram_iq71:auto_generated.clock0
 clock1 => ~NO_FANOUT~
 clocken0 => ~NO_FANOUT~
 clocken1 => ~NO_FANOUT~
@@ -5773,21 +5788,21 @@ aclr0 => ~NO_FANOUT~
 aclr1 => ~NO_FANOUT~
 byteena_a[0] => ~NO_FANOUT~
 byteena_b[0] => ~NO_FANOUT~
-q_a[0] <= altsyncram_vtc1:auto_generated.q_a[0]
-q_a[1] <= altsyncram_vtc1:auto_generated.q_a[1]
-q_a[2] <= altsyncram_vtc1:auto_generated.q_a[2]
-q_a[3] <= altsyncram_vtc1:auto_generated.q_a[3]
-q_a[4] <= altsyncram_vtc1:auto_generated.q_a[4]
-q_a[5] <= altsyncram_vtc1:auto_generated.q_a[5]
-q_a[6] <= altsyncram_vtc1:auto_generated.q_a[6]
-q_a[7] <= altsyncram_vtc1:auto_generated.q_a[7]
+q_a[0] <= altsyncram_iq71:auto_generated.q_a[0]
+q_a[1] <= altsyncram_iq71:auto_generated.q_a[1]
+q_a[2] <= altsyncram_iq71:auto_generated.q_a[2]
+q_a[3] <= altsyncram_iq71:auto_generated.q_a[3]
+q_a[4] <= altsyncram_iq71:auto_generated.q_a[4]
+q_a[5] <= altsyncram_iq71:auto_generated.q_a[5]
+q_a[6] <= altsyncram_iq71:auto_generated.q_a[6]
+q_a[7] <= altsyncram_iq71:auto_generated.q_a[7]
 q_b[0] <= <GND>
 eccstatus[0] <= <GND>
 eccstatus[1] <= <GND>
 eccstatus[2] <= <GND>
 
 
-|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated
+|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_iq71:auto_generated
 address_a[0] => ram_block1a0.PORTAADDR
 address_a[0] => ram_block1a1.PORTAADDR
 address_a[0] => ram_block1a2.PORTAADDR
@@ -6009,7 +6024,7 @@ q_a[6] <= mux_hib:mux2.result[6]
 q_a[7] <= mux_hib:mux2.result[7]
 
 
-|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated|decode_1oa:deep_decode
+|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_iq71:auto_generated|decode_1oa:deep_decode
 data[0] => eq_node[1].IN0
 data[0] => eq_node[0].IN0
 enable => eq_node[1].IN1
@@ -6018,7 +6033,7 @@ eq[0] <= eq_node[0].DB_MAX_OUTPUT_PORT_TYPE
 eq[1] <= eq_node[1].DB_MAX_OUTPUT_PORT_TYPE
 
 
-|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_vtc1:auto_generated|mux_hib:mux2
+|zx01xr|rom81:c_ROM81|altsyncram:altsyncram_component|altsyncram_iq71:auto_generated|mux_hib:mux2
 data[0] => result_node[0].IN1
 data[1] => result_node[1].IN1
 data[2] => result_node[2].IN1
